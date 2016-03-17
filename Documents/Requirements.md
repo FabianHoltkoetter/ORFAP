@@ -39,3 +39,4 @@
 * no stupid people
 * time is local of the destination
 * no design guidelines yet
+* no authentication but identification
