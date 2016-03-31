@@ -33,7 +33,7 @@
 ## More stuff
 
 * only passenger transportation is relevant
-* CentOS server will be provided with MySQL database
+* CentOS server will be provided with MySQL database, ssh access from within companys (faculty) network
 * It's enough for the data to be available only in the office
 * Should work on Win 10 Installation with Firefox
 * no stupid people
@@ -42,3 +42,12 @@
 * no authentication but identification
 * Multiple Logins of of one user on more than one machine possible
 * Data not present mustnt be calculated or made up
+* Export current graph + filtersettings to pdf, popup Explorer to choose directory/filename
+
+## GUI
+* no colorblind users present
+* Dropdownlist for Achsenbeschriftung
+* Maybe Dropdownlist for Filtercategories & checkboxes originating from the connection
+* Logo upper left, Logout button upper right, logged in user left of the logoutbutton. logoutbutton changes to login, if not logged in.
+* Saved Filtersettings in the application to be load/stored
+* Export/Load/Save Buttons on the left
