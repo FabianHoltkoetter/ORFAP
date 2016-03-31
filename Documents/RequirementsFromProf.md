@@ -35,8 +35,10 @@
 * only passenger transportation is relevant
 * CentOS server will be provided with MySQL database
 * It's enough for the data to be available only in the office
-* Should work on Win 10 Installation
+* Should work on Win 10 Installation with Firefox
 * no stupid people
 * time is local of the destination
 * no design guidelines yet
 * no authentication but identification
+* Multiple Logins of of one user on more than one machine possible
+* Data not present mustnt be calculated or made up
