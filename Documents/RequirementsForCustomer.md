@@ -11,3 +11,8 @@
 7. As a User I want to publicly share configurations with my colleagues to analyse stuff together. :heart:
 
 ## 2. Technical Requirements
+
+## 3. Ziele
+
+## 4. Nicht-Ziele
+
