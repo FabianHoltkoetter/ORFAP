@@ -1,5 +1,6 @@
+#Systemspezifikation
 
-# User Storys
+## 1. User Storys
 
 1. As a User I want to see the newest available data from transtats displayed in bar-graph form so that I can analyse the data to determine the best flight routes for the company.
 2. As a User I want to configure the X-Axis of the graph to display one of the qualitative features TIME (day of week), destination, origin so that I can adapt the graph for my current needs.
@@ -9,4 +10,4 @@
 6. As a User I want to save my graph configurations to easily continue working on different analysations.
 7. As a User I want to publicly share configurations with my colleagues to analyse stuff together. :heart:
 
-# Diagrams
+## 2. Technical Requirements
