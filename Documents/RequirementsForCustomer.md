@@ -24,12 +24,12 @@ The CTS-Subsystem gains the page for requested data and send them over REST to t
 ![FAPCrawler](Images/FAPCrawler.png)
 
 It will run as a monthly cronjob to ensure the data is up to date. When new data is published on the transtats page between the intervals the crawler will activate itself to ensure the newest data is available.
-## 3. Scope
+## 3. Project Scope
 * Read and save data from transtats
-* Show data in an GUI
+* Show data in GUI
 * Filter Data
-* Delpoy the whole system on an CentOS Server
+* Deploy the whole system on a CentOS Server
 
-## 4. Scope not included
+## 4. Not included in Porject Scope
 * Build the CentOS Server
 * Build the MySQL database
