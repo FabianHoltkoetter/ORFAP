@@ -18,7 +18,6 @@ The Backend holds the Data from transtats. (User Story 1) The Data will be saved
 
 ![FAPBAckend](Images/FAPBAckend.png)
 
-
 All CRUD Operations will be available on the interface. (Create, Read, Update, Delete). In addition to that the interface provides a method to filter the data (User Story 2, 3) and a method to save the filter configurations from user (User Story 5).
 
 ### 2.3. Crawler
