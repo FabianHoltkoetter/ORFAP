@@ -19,11 +19,11 @@ The Backend holds the Data from transtats. (User Story 1) The Data will be saved
 All CRUD Operations will be available on the interface. (Create, Read, Update, Delete). In addition to that the interface provides a method to filter the data (User Story 2, 3)
 
 ### 2.3. Crawler
-The CTS Subsystem gains the page for requested data and send them over REST to the BAckend. It will probably be realized in python.
+The CTS-Subsystem gains the page for requested data and send them over REST to the backend. It will probably be realized in python.
 
 ![FAPCrawler](Images/FAPCrawler.png)
 
-It will run as a monthly Cronjob to ensure the data is up to date. When new data is published on the transtats page between the intervals the crawler will activate itself to ensure the newest data is available.
+It will run as a monthly cronjob to ensure the data is up to date. When new data is published on the transtats page between the intervals the crawler will activate itself to ensure the newest data is available.
 ## 3. Scope
 * Read and save data from transtats
 * Show data in an GUI
