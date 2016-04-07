@@ -16,14 +16,14 @@ The Frontend of the application will be implemented as a website using the Polym
 ### 2.2. Backend
 The Backend holds the Data from transtats. (User Story 1) The Data will be saved into an existing MySQL database. The backend provides an RESTFul interface to access the saved data.
 
-![FAPBAckend](Images/FAPBAckend.png)
+\ ![FAPBAckend](Images/FAPBAckend.png)
 
 All CRUD Operations will be available on the interface. (Create, Read, Update, Delete). In addition to that the interface provides a method to filter the data (User Story 2, 3) and a method to save the filter configurations from user (User Story 5).
 
 ### 2.3. Crawler
 The CTS-Subsystem gains the page for requested data and send them over REST to the backend. It will probably be realized in python.
 
-![FAPCrawler](Images/FAPCrawler.png)
+\ ![FAPCrawler](Images/FAPCrawler.png)
 
 It will run as a monthly cronjob to ensure the data is up to date. When new data is published on the transtats page between the intervals the crawler will activate itself to ensure the newest data is available.
 
