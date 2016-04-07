@@ -16,7 +16,7 @@ The Backend holds the Data from transtats. (User Story 1) The Data will be saved
 
 ![FAPBAckend](Images/FAPBAckend.png)
 
-All CRUD Operations will be available on the interface. (Create, Read, Update, Delete). In addition to that the interface provides a method to filter the data (User Story 2, 3)
+All CRUD Operations will be available on the interface. (Create, Read, Update, Delete). In addition to that the interface provides a method to filter the data (User Story 2, 3) and a method to save the filter from user.
 
 ### 2.3. Crawler
 The CTS-Subsystem gains the page for requested data and send them over REST to the backend. It will probably be realized in python.
