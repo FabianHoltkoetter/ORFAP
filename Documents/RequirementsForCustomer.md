@@ -12,14 +12,20 @@
 ## 2. Technical Requirements
 ### 2.1. GUI
 ### 2.2. Backend
-Für die Datenspeicherung (User Story 1) soll es ein Backend geben. Dieses wird an eine vorhandene MYSQL Datenbank angebunden. Der Zugriff auf die Daten erfolgt über eine RESTFul Schnittstelle.
+The Backend holds the Data from transtats. (User Story 1) The Data will be saved into an existing MySQL database. The backend provides an RESTFul interface to access the saved data.
 
 ![FAPBAckend](Images/FAPBAckend.png)
 
-Die RESTFul Schnittstelle bietet dabei sämtliche CRUD Operationen (Create, Read, Update, Delete). Zusätzlich soll es Schnittstellen zum Filtern der Daten geben. (User Story 2, 3)
+All CRUD Operations will be available on the interface. (Create, Read, Update, Delete). In addition to that the interface provides a method to filter the data (User Story 2, 3)
 
 ### 2.3. Crawler
 
-## 3. Ziele
+## 3. Scope
+* Read and save data from transtats
+* Show data in an GUI
+* Filter Data
+* Delpoy the whole system on an CentOS Server
 
-## 4. Nicht-Ziele
+## 4.Scope not included
+* Build the CentOS Server
+* Build the MySQL database
