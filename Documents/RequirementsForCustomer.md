@@ -26,6 +26,6 @@ All CRUD Operations will be available on the interface. (Create, Read, Update, D
 * Filter Data
 * Delpoy the whole system on an CentOS Server
 
-## 4.Scope not included
+## 4. Scope not included
 * Build the CentOS Server
 * Build the MySQL database
