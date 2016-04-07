@@ -5,9 +5,9 @@
 1. As a User I want to see the newest available data from transtats displayed in bar-graph form so that I can analyse the data to determine the best flight routes for the company.
 2. As a User I want to configure the X-Axis of the graph to display one of the qualitative features TIME (day of week), destination, origin so that I can adapt the graph for my current needs.
 3. As a User I want to configure the Y-Axis of the graph to display one of the quantitative features Flights, Passengers, Delays, DelayDuration, Cancellations so that I can adapt the graph for my current needs.
-4. As a Max Schug I want to export the graph to PDF so that [insert reason here].
+4. As a User I want to export the graph to PDF so that I can save my current graph.
 5. As a User I want to save my graph configurations to easily continue working on different analysations.
-6. As a User I want to publicly share configurations with my colleagues to analyse stuff together. :heart:
+6. As a User I want to publicly share configurations with my colleagues to analyse stuff together.
 
 ## 2. Technical Requirements
 ### 2.1. GUI
@@ -32,6 +32,6 @@ It will run as a monthly cronjob to ensure the data is up to date. When new data
 * Filter Data
 * Deploy the whole system on a CentOS Server
 
-## 4. Not included in Porject Scope
+## 4. Not included in Project Scope
 * Build the CentOS Server
 * Build the MySQL database
