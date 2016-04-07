@@ -1,4 +1,4 @@
-#Systemspezifikation
+#System specification
 
 ## 1. User Stories
 
