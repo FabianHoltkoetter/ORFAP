@@ -8,11 +8,27 @@ The Architecture follows the Microservice Architecture and decomposes the whole 
 
 The **Flight Data Service** provides an API for storing the relevant Flight Data and accessing it. This service ensures integrity and validity of the Data. Additionally it saves the global User Configurations.
 
+**Programming language:** Java
+
+**Core technologies:** Spring, MySQL
+
 The **Transtats Crawler Service** provides the functionality to read the current transtats.com Data, transform it as necessary and store it to the Flight Data Service.
+
+**Programming language:** Java
+
+**Core technologies:** Spring
 
 The **Web-GUI** delivers a static (not-templated!) HTML + JS webpage that can be used by the Thin Client as the user frontend. It can make REST requests to the API.
 
+**Programming language:** JavaScript, HTML
+
+**Core technologies:** Polymer
+
 The **API Gateway** unifies the public API and opens it up to the network on port 80. It may also be used to restrict requests for security reasons (e.g. allow only read on flights).
+
+**Programming language:** Java
+
+**Core technologies:** Spring, Zuul
 
 # Data Model
 
