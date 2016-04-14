@@ -2,7 +2,7 @@
 
 # Architecture
 
-![Architektur Diagramm](architecture.png)\ 
+![Architektur Diagramm](architecture.png)\
 
 The Architecture follows the Microservice Architecture and decomposes the whole application into three major Services that are interconnected by a Hypermedia API (REST maturity 3) and the required infrastructure components.
 
@@ -16,4 +16,14 @@ The **API Gateway** unifies the public API and opens it up to the network on por
 
 # Data Model
 
-![](model.png)\ 
+![](model.png)\
+
+The data model is split into two scopes: Transtats data and Settings.
+
+## Transtats data
+
+The first scope describes the data to save from transtats. This data will be provided from the Crawler Service and is used from the GUI to show the graphs. The most important part is the route entity. It has all the quantitive data (delays, flight count, passenger count, ...) to show in the graphs. In addition to that the route has 3 relations to the qualitative data (airport, source, destination).
+
+## Settings
+
+The second scope describes the saved settings data of a specific user. Users can save this data to hold or share a fully configured graph.
