@@ -9,7 +9,6 @@ Passengers
 AirlineID  
 OriginCityMarketID  
 DestCityMarketID  
-DestCountry  
 Month  
   
 ##T-100 Domestic Segment (All Carriers)  
@@ -20,7 +19,6 @@ Passengers
 AirlineID  
 OriginCityMarketID  
 DestCityMarketID  
-DestCountry  
 Month  
   
 ##On-Time Performance
