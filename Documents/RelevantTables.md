@@ -1,15 +1,4 @@
 %Relevant tables on the Transtats website
-
-
-##T-100 Domestic Market (All Carriers)  
-http://transtats.bts.gov/DL_SelectFields.asp?Table_ID=310  
-DepScheduled  
-DepPerformed  
-Passengers  
-AirlineID  
-OriginCityMarketID  
-DestCityMarketID  
-Month  
   
 ##T-100 Domestic Segment (All Carriers)  
 http://transtats.bts.gov/DL_SelectFields.asp?Table_ID=311  
