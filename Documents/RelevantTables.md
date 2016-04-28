@@ -19,9 +19,7 @@ FlightDate
 AirlineID  
 OriginCityMarketID  
 DestCityMarketID  
-DepDelay (should negative delay (too early) be considered as well?)  
 DepDelayMinutes  
-ArrDelay (shouldnegative delay (too early) be considered as well?)  
 ArrDelayMinutes  
 Cancelled  
 
