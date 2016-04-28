@@ -30,7 +30,6 @@ FlightDate
 AirlineID  
 OriginCityMarketID  
 DestCityMarketID  
-DestCountry  
 DepDelay (should negative delay (too early) be considered as well?)  
 DepDelayMinutes  
 ArrDelay (shouldnegative delay (too early) be considered as well?)  
@@ -38,7 +37,6 @@ ArrDelayMinutes
 Cancelled  
 
 ##Needed Lookup-Tables:  
-Dest/OriginCountry - http://transtats.bts.gov/Download_Lookup.asp?Lookup=L_COUNTRY_CODE  
 Dest/OriginCityMarketID - http://transtats.bts.gov/Download_Lookup.asp?Lookup=L_CITY_MARKET_ID  
 AirlineID - http://transtats.bts.gov/Download_Lookup.asp?Lookup=L_AIRLINE_ID  
 
