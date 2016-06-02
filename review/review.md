@@ -48,6 +48,7 @@ try {
 
 GUI: Ye
 
+Server: A lot of repetitive code
 
 Crawler: some duplicate code Airline7CityLookupService
 
@@ -55,6 +56,7 @@ Crawler: some duplicate code Airline7CityLookupService
 
 GUI: Yes, but layout is pixel fixed (zero responsiveness)
 
+Server: No frameworks used which could simplify the sql statements
 
 Crawler: No framework
 
@@ -70,6 +72,7 @@ Yes, but SettingsSerializer is very complex.
 
 No (GUI)
 
+No (Server)
 
 Crawler: 1 Test present
 
@@ -103,6 +106,8 @@ Crawler: not measurable
 
 GUI: Yes
 
+Server: transportdata table -> airline is not a reference
+        dbUrl, user, pass should be a constant
 
 Crawler:n Yes
 
@@ -122,7 +127,12 @@ Crawler: Yes
 
 ### The code complies to coding standards
 
+Server: Class name of RmiServiceSql different from filename.
+        No CodeStyle for sql files
+        package doesn´t fit the destination
+        line of continuation haswrong indentation (290:0)
 Crawler: Yes
+Csvloader: Class name of FileCsvInStream different from filename.
 
 ### Logging used appropriately
 
@@ -136,3 +146,5 @@ Crawler: Logger used
 
 
 ### Are requirements marked as `done` in specification document really completed?
+
+No.
