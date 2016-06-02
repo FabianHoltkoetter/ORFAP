@@ -46,12 +46,16 @@ try {
  
 ### Repetitive Code has been factored out
 
-GUI: Yes
+GUI: Ye
+
+
 Crawler: some duplicate code Airline7CityLookupService
 
 ### Frameworks have been used appropriately
 
 GUI: Yes, but layout is pixel fixed (zero responsiveness)
+
+
 Crawler: No framework
 
 ### Command classes have been used appropriately - methods have all been defined appropriately
@@ -65,16 +69,22 @@ Yes, but SettingsSerializer is very complex.
 ### Unit tests are present and correct
 
 No (GUI)
+
+
 Crawler: 1 Test present
 
 ### Common errors have been checked for
 
 GUI: No
+
+
 Crawler: Some Declariation Redundancy present
 
 ### Potential threading issues have been eliminated where possible
 
 GUI: Yes (no multithreading)
+
+
 Crawler: Yes, see above
 
 ### Any security concerns have been adressed
@@ -92,16 +102,22 @@ Crawler: not measurable
 ### The functionality fits the current design, architecture
 
 GUI: Yes
+
+
 Crawler:n Yes
 
 ### The code is unit testable
 
 GUI: partially
+
+
 Crawler: small part
 
 ### The code does not use unjustifiable static methods/blocks
 
 GUI:Yes
+
+
 Crawler: Yes
 
 ### The code complies to coding standards
@@ -111,6 +127,8 @@ Crawler: Yes
 ### Logging used appropriately
 
 GUI: No, bad souts
+
+
 Crawler: Logger used
 
 ### Possibility of NPE
