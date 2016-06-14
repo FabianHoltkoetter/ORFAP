@@ -12,7 +12,7 @@ To setup a MYSQL-Database on the server please refer to [this guide](http://dev.
 Now you are ready to go to get the application up and running! From here it is as simple as executing some commands (as sudo!).
 
 * Starting the Backend:
-`docker run -d -p 8081:8080 darenegade/fapbackend `
+`docker run -d -e "SPRING_PROFILES_ACTIVE=production" -p 8081:8080 darenegade/fapbackend `
 * Starting the Crawler:
 `docker run -d -p 8082:8081 arne2/fapcrawler`
 * Starting the GUI:
@@ -24,6 +24,13 @@ If you want you can also start the so called Watchtower. This docker container w
 
 * Starting the watchtower:
 `docker run -d -v /var/run/docker.sock:/var/run/docker.sock centurylink/watchtower`
+
+Some more neat commands to get you started with using docker:
+
+* `docker ps` lists all running containers. The `-a` flag lists all stopped containers, too.
+* `docker logs <id>` shows the log output of this container. `-f` tails the log so you can continue watching the output.
+* `docker stop <id(s)>` stops all given containers.
+* `docker stats <id(s)>` show the current system usage of all given containers.
 
 Now just wait for all containers to start and you can continue by crawling your first data. How to do this? Just follow the user documentation!
 
