@@ -1,0 +1,39 @@
+# Technical Installation
+
+To deploy the application on your companies server you need to install docker on the server you want to deploy the application on. A docker installation guide can be found
+[https://docs.docker.com/linux/](here).
+
+Further you need to make sure you have a MYSQL-Database setup with the following data:
+* Username: ExtDev2
+* Password: ***
+
+To setup a MYSQL-Database on the server please refer to [http://dev.mysql.com/doc/refman/5.7/en/linux-installation.html](this guide).
+
+Now you are ready to go to get the application up and running! From here it is as simple as executing some commands (as sudo!).
+
+* Starting the Backend:
+`docker run -d -p 8081:8080 darenegade/fapbackend `
+* Starting the Crawler:
+`docker run -d -p 8082:8081 arne2/fapcrawler`
+* Starting the GUI:
+`docker run -d -p 8080:80 petermueller/flight-analyzer`
+* Starting the API-Gateway:
+`docker run -d -p 80:8080 darenegade/fapapigateway `
+
+If you want you can also start the so called Watchtower. This docker container will keep all parts of the applications updated automatically when a new version is released.
+
+* Starting the watchtower:
+`docker run -d -v /var/run/docker.sock:/var/run/docker.sock centurylink/watchtower`
+
+Now just wait for all containers to start and you can continue by crawling your first data. How to do this? Just follow the user documentation!
+
+# User Installation
+
+To get the application running on your machine you only need two things.
+
+1. You need a connection to your companies network. You can connect to your companies network with the companies VPN.
+You can find an instruction how to connect to it [https://www.lrz.de/services/netz/mobil/vpn_en/](here)
+
+2. A modern web browser. It doesn't matter if it's Firefox, Chrome or Microsoft Edge. Only Internet Explorer is not supported.
+
+Now you are ready to go! Just go to 10.28.2.166 and login with your name. For further instruction on how to use the application please refer to the user guide.
