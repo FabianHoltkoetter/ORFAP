@@ -1,13 +1,13 @@
 # Technical Installation
 
 To deploy the application on your companies server you need to install docker on the server you want to deploy the application on. A docker installation guide can be found
-[https://docs.docker.com/linux/](here).
+[here](https://docs.docker.com/linux/).
 
 Further you need to make sure you have a MYSQL-Database setup with the following data:
 * Username: ExtDev2
 * Password: ***
 
-To setup a MYSQL-Database on the server please refer to [http://dev.mysql.com/doc/refman/5.7/en/linux-installation.html](this guide).
+To setup a MYSQL-Database on the server please refer to [this guide](http://dev.mysql.com/doc/refman/5.7/en/linux-installation.html).
 
 Now you are ready to go to get the application up and running! From here it is as simple as executing some commands (as sudo!).
 
@@ -32,7 +32,7 @@ Now just wait for all containers to start and you can continue by crawling your 
 To get the application running on your machine you only need two things.
 
 1. You need a connection to your companies network. You can connect to your companies network with the companies VPN.
-You can find an instruction how to connect to it [https://www.lrz.de/services/netz/mobil/vpn_en/](here)
+You can find an instruction how to connect to it [here](https://www.lrz.de/services/netz/mobil/vpn_en/)
 
 2. A modern web browser. It doesn't matter if it's Firefox, Chrome or Microsoft Edge. Only Internet Explorer is not supported.
 
