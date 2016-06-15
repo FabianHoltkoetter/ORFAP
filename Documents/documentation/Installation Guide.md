@@ -23,14 +23,14 @@ Now you are ready to go to get the application up and running! From here it is a
 If you want you can also start the so called Watchtower. This docker container will keep all parts of the applications updated automatically when a new version is released.
 
 * Starting the watchtower:
-`docker run -d -v /var/run/docker.sock:/var/run/docker.sock centurylink/watchtower`
+`sudo docker run -d -v /var/run/docker.sock:/var/run/docker.sock centurylink/watchtower`
 
 Some more neat commands to get you started with using docker:
 
-* `docker ps` lists all running containers. The `-a` flag lists all stopped containers, too.
-* `docker logs <id>` shows the log output of this container. `-f` tails the log so you can continue watching the output.
-* `docker stop <id(s)>` stops all given containers.
-* `docker stats <id(s)>` show the current system usage of all given containers.
+* `sudo docker ps` lists all running containers. The `-a` flag lists all stopped containers, too.
+* `sudo docker logs <id>` shows the log output of this container. `-f` tails the log so you can continue watching the output.
+* `sudo docker stop <id(s)>` stops all given containers.
+* `sudo docker stats <id(s)>` show the current system usage of all given containers.
 
 Now just wait for all containers to start and you can continue by crawling your first data. How to do this? Just follow the user documentation!
 
