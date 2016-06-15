@@ -9,16 +9,16 @@ Further you need to make sure you have a MYSQL-Database setup with the following
 
 To setup a MYSQL-Database on the server please refer to [this guide](http://dev.mysql.com/doc/refman/5.7/en/linux-installation.html).
 
-Now you are ready to go to get the application up and running! From here it is as simple as executing some commands (as sudo!).
+Now you are ready to go to get the application up and running! From here it is as simple as executing some commands.
 
 * Starting the Backend:
-`docker run -d -e "SPRING_PROFILES_ACTIVE=production" -p 8081:8080 darenegade/fapbackend `
+`sudo docker run -d -e "SPRING_PROFILES_ACTIVE=production" -p 8081:8080 darenegade/fapbackend `
 * Starting the Crawler:
-`docker run -d -p 8082:8081 arne2/fapcrawler`
+`sudo docker run -d -p 8082:8081 arne2/fapcrawler`
 * Starting the GUI:
-`docker run -d -p 8080:80 petermueller/flight-analyzer`
+`sudo docker run -d -p 8080:80 petermueller/flight-analyzer`
 * Starting the API-Gateway:
-`docker run -d -p 80:8080 darenegade/fapapigateway `
+`sudo docker run -d -p 80:8080 darenegade/fapapigateway `
 
 If you want you can also start the so called Watchtower. This docker container will keep all parts of the applications updated automatically when a new version is released.
 
