@@ -21,5 +21,5 @@
 
 - Number of flights are only crawled for the first day of each month
 - Number of passengers is consistently too low (around 500 to 600).
-- Only six flights are found from NY to las vegas in 2015. It should be 14.
+- Only six airlines are found flying from NY to las vegas in 2015. It should be 14.
 - "merged" airline names should not happen
