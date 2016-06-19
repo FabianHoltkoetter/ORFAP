@@ -97,8 +97,7 @@ http.PostForm("http://transtats.bts.gov/DownLoad_Table.asp", form)
 ```
 form := url.Values{"sqlstr": {"SELECT DEPARTURES_SCHEDULED,DEPARTURES_PERFORMED,PASSENGERS,AIRLINE_ID,
 									ORIGIN_CITY_MARKET_ID,DEST_CITY_MARKET_ID,MONTH 
-							   FROM  T_T100D_SEGMENT_ALL_CARRIER  
-							   WHERE Month=[[month]] 
+							   FROM  T_T100D_SEGMENT_ALL_CARRIER
 							   AND YEAR=[[year]] 
 							   AND ORIGIN_CITY_MARKET_ID=31703"}}
 http.PostForm("http://transtats.bts.gov/DownLoad_Table.asp", form)
