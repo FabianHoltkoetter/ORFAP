@@ -1,5 +1,5 @@
-- fit text into chip/cancel button
-- load settings (The button does not show up) 
+- fit text into chip/cancel button :heavy_check_mark: 
+- load settings (The button does not show up) :heavy_check_mark: 
 - looks strange (Time|Delay Duration) 
 
 - Truncate all digits in graph hover info ( Only two digits after point -> 111.01) 
