@@ -3,4 +3,4 @@
 - looks strange (Time|Delay Duration) 
 
 - Truncate all digits in graph hover info ( Only two digits after point -> 111.01) 
-- Remove all old names of the Airline names ( after the d.b.a. in the string)
+- Remove all old names of the Airline names ( after the d.b.a. in the string) :heavy_check_mark: 
