@@ -1,7 +1,7 @@
 # Backend
 
 # CRAWLER
-In the Crawler there are presently JUnit tests which examine if the crawled data (arlines, markets, etc.) are valid.
+In the Crawler there are presently JUnit tests which examine if the crawled data (arlines, markets, etc.) are valid. They furthermore assure if the components of the pipes and filter solution work correctly.
 There are no integration tests implemented.
 
 # GUI
