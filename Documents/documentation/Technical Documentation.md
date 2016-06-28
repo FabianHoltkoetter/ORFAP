@@ -22,6 +22,6 @@ Also all markets already in the database are requested and saved into a set.
 13. Step 6 to 12 are done for the on-time-database, now creating (logical) flights instead of routes.
 14. If there is more than one month to be crawled, steps 6 to 13 are repeated for every given month.
 
-Definitions  
-Route = Information only available on a monthly base. They contain the number of passengers going from one market to the other in the given month.  
-Flight = Information available on a daily base. This contains, for each flight, information about delays and cancellations, as well as the exact date.
+## Definitions  
+Route = Information available on a monthly base. They contain the number of passengers going from one market to the other in the given month. The information for number of passengers is always given as a route with the date of the first day of the corresponding month.  
+Flight = Information available on a daily base. This contains, for each flight, information about delays and cancellations, as well as the exact date of the flight. Flights also make up the number of flights from one market to another.
