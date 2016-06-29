@@ -6,7 +6,15 @@
 
 The Architecture follows the Microservice Architecture and decomposes the whole application into three major Services that are interconnected by a Hypermedia API (REST maturity 3) and the required infrastructure components.
 
+With the Microservice Architecture every service can be build/test/deployed independently. This is the main reason, why this
+architecture was chosen. So every service can be build and configured to
+perfectly meet costumer requirements.
+
+Here are the different services of this architecture:
+
 The **Flight Data Service** provides an API for storing the relevant Flight Data and accessing it. This service ensures integrity and validity of the Data. Additionally it saves the global User Configurations.
+
+**Artifact name** FAPBackend
 
 **Programming language:** Java
 
@@ -14,11 +22,15 @@ The **Flight Data Service** provides an API for storing the relevant Flight Data
 
 The **Transtats Crawler Service** provides the functionality to read the current transtats.com Data, transform it as necessary and store it to the Flight Data Service.
 
+**Artifact name** FAPCrawler
+
 **Programming language:** Java
 
 **Core technologies:** Spring
 
 The **Web-GUI** delivers a static (not-templated!) HTML + JS webpage that can be used by the Thin Client as the user frontend. It can make REST requests to the API.
+
+**Artifact name** flight-analyzer
 
 **Programming language:** JavaScript, HTML
 
@@ -26,15 +38,18 @@ The **Web-GUI** delivers a static (not-templated!) HTML + JS webpage that can be
 
 The **API Gateway** unifies the public API and opens it up to the network on port 80. It may also be used to restrict requests for security reasons (e.g. allow only read on flights).
 
+**Artifact name** FAPAPIGateway
+
 **Programming language:** Java
 
 **Core technologies:** Spring, Zuul
 
 # Data Model
 
+The data model is split into two scopes: Transtats data and Settings.
+
 ![](model.png)\
 
-The data model is split into two scopes: Transtats data and Settings.
 
 ## Transtats data
 
