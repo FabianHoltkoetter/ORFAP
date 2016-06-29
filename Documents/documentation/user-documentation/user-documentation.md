@@ -66,12 +66,9 @@ You can also limit the filters by typing into the light grey search field.
 
 Here you can start the Crawler to update the data from the `transtats.com` website. In the input field you have to specify the month to update. To start the crawling process click on **`START CRAWLING`**.
 
-
-# Configuration of the Graph
-
 # Graph Configuration
 
-# Basic Configuration
+## Basic Configuration
 
 ![](graph-setting1.png)\
 
@@ -83,7 +80,30 @@ With the `Qualitative Value` you can select how the data is grouped. For example
 
 The `Quantitative Value` simply states what value should be used for the Y-Axis.
 
+The `Time Step` picker sets the length of the period you are interested in. Adjust this Setting if you are interested in accumulated data for a whole year or the specific days of week.
 
-# Selectors and Saving a Setting
+## Selectors and Saving a Setting
 
-![](graph-setting2.png) 
+![](graph-setting2.png)\ 
+
+With this Selectors you can additionally limit data by Airline or Destination.
+
+By adding an Airline to the Airline Selector, you tell the application that you are only interested for data of this Airline. You can also set a group (combination) of multiple Airlines. Choosing no Airline results in a collection of data for all Airlines.
+
+The Destination Selector behaves exactly like the Airline Selector. By selecting multiple (or one) Markets the data will be limited to the flights that have these Destinations.
+
+---
+
+The **`APPLY`** button will calculate the data for the current filter settings and display them in the graph.
+
+---
+
+With the **Save Setting** Dialog you can store the current setting (filter) for only your personal use or shared for the whole company (public).
+
+To store the Setting publically you need to check the `Public` box.
+
+In the `Settings Name` field you can choose a fitting name for your Filter.
+
+# Export as PDF
+
+To export the Graph as a PDF simply click the PDF button on the top right in the toolbar. Then you can choose the target folder and name of the PDF an click Save to finish this process.
