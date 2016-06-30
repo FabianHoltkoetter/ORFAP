@@ -5,8 +5,9 @@
 * **Code Review** Every change and commitment is reviewed due to our PR-Workflow on github from all team members. Combined with the active linter we made sure that all standards are met.
 
 # CRAWLER
-In the Crawler there are presently JUnit tests which examine if the crawled data (arlines, markets, etc.) are valid. They furthermore assure if the components of the pipes and filter solution work correctly.
-There are no integration tests implemented.
+
+* **Unit Tests** JUnit tests are implemented which examine if the crawled data (arlines, markets, etc.) are valid. They furthermore assure if the components of the pipes and filter architecture work correctly.
+* **Code Review** Every change and commitment is reviewed due to our PR-Workflow on github from all team members. Combined with the active linter we made sure that all standards are met.
 
 # GUI
 
