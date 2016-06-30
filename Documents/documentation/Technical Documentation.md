@@ -1,6 +1,16 @@
 # Technical Documentation
 ## GUI
 
+The GUI offers a visual representation for the backends API which is described further down in this document. The only data which is stored locally is the last entered username of the user. This username is stored inside a cookie called `username` but is not needed for the correct functionality of the application.
+
+The application can be in one of four different states during use:
+
+/ ![GUI States](https://docs.google.com/drawings/d/1Klje4LtOxxzp_0M50SAaW5lNm4ZHVR0SII4z1-KV7tE/pub?w=960&h=720)
+
+The following flowchart displays the requests from the frontend in the different states. A refresh in the browser restarts these requests.
+
+/ ![GUI Backend Request-Flowchart](https://docs.google.com/drawings/d/1T3logsQp9ZpaUXXXul9u1ZUYuzmTrItcWT4NU9vy-Hc/pub?w=887&h=843)
+
 / ![Apply Settings](images/ApplySetting.png)
 / ![Start Crawler](images/StartCrawler.png)
 
