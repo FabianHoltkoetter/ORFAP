@@ -60,6 +60,7 @@ Code 200
 **Description:** Save an airline.
 
 **Request Example:**
+
 Header: Content-Type application/json
 ```
 {
@@ -100,6 +101,7 @@ Code 200
 **Description:** Update an specific airline with the given `id`.
 
 **Request Example:**
+
 Header: Content-Type application/json
 ```
 {
@@ -161,6 +163,7 @@ Code 200
 **Description:** Save a market.
 
 **Request Example:**
+
 Header: Content-Type application/json
 ```
 {
@@ -201,6 +204,7 @@ Code 200
 **Description:** Update a specific market with the given `id`.
 
 **Request Example:**
+
 Header: Content-Type application/json
 ```
 {
@@ -281,6 +285,7 @@ Code 200
 **Description:** Save a route.
 
 **Request Example:**
+
 Header: Content-Type application/json
 ```
 {
@@ -319,6 +324,7 @@ Code 201
 **Description:** Saves a list of routes.
 
 **Request Example:**
+
 Header: Content-Type application/json
 ```
 [
@@ -397,6 +403,7 @@ Code 200
 **Description:** Update a specific route with the given `id`.
 
 **Request Example:**
+
 Header: Content-Type application/json
 ```
 {
@@ -449,6 +456,7 @@ includes business logic. The following sequence diagram describes this logic:
 \ ![Filter Logic](/images/FilterSeqDiagram.png)
 
 **Request Example:**
+
 Header: Content-Type application/json
 ```
 {
@@ -563,6 +571,7 @@ Code 200
 **Description:** Save a setting.
 
 **Request Example:**
+
 Header: Content-Type application/json
 ```
 {
@@ -651,6 +660,7 @@ Code 200
 **Description:** Update a specific setting with the given `id`.
 
 **Request Example:**
+
 Header: Content-Type application/json
 ```
 {
@@ -840,5 +850,27 @@ An example for a line in the file
 \ ![FAPCrawler crawling process](Crawler_schematics.png)
 
 ### Definitions  
-Route = Information available on a monthly base. They contain the number of passengers going from one market to the other in the given month. The information for number of passengers is always given as a route with the date of the first day of the corresponding month.  
-Flight = Information available on a daily base. This contains, for each flight, information about delays and cancellations, as well as the exact date of the flight. Flights also make up the number of flights from one market to another.
+* **Route:**  Information available on a monthly base. They contain the number of passengers going from one market to the other in the given month. The information for number of passengers is always given as a route with the date of the first day of the corresponding month.  
+* **Flight:**  Information available on a daily base. This contains, for each flight, information about delays and cancellations, as well as the exact date of the flight. Flights also make up the number of flights from one market to another.
+* **Market:**  A market includes all airports of a domestic region. E.g. the domestic region New York includes 13 airports.
+
+### Crawler API
+
+Base URL: `http://10.28.2.166/crawler`
+
+#### Path `/crawlIntoBackend`
+
+##### Http Methods
+###### ***`Get`***
+
+**Description:** Crawl new data into the backend.
+
+**Query**
+
+* **year** Year to crawl with format: `yyyy`
+* **month** Range of months to crawl (optional) with the format: `mm-mm` or `mm`
+
+**Response Example:**
+```
+Code 200
+```
