@@ -12,7 +12,7 @@ To setup a MYSQL-Database on the server please refer to [this guide](http://dev.
 Now you are ready to go to get the application up and running! From here it is as simple as executing some commands.
 
 * Starting the Backend:
-`sudo docker run -d -e "SPRING_PROFILES_ACTIVE=production" -p 8081:8080 darenegade/fapbackend `
+`docker run -d -e TZ=GMT+2 -e "SPRING_PROFILES_ACTIVE=production" -p 8081:8080 darenegade/fapbackend`
 * Starting the Crawler:
 `sudo docker run -d -p 8082:8081 arne2/fapcrawler`
 * Starting the GUI:
