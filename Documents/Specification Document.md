@@ -11,7 +11,7 @@
 
 ## 2. Technical Requirements
 ### 2.1. GUI
-The Frontend of the application will be implemented as a website using the Polymer framework. It will feature a simple, feature-rich and nice looking user interface. The user will be able to perform all neccessary actions needed for analysing the flight routes.
+The Frontend of the application will be implemented as a website using the Polymer framework. It will feature a simple, feature-rich and nice looking user interface. The user will be able to perform all necessary actions needed for analysing the flight routes.
 
 ### 2.2. Backend
 The Backend holds the Data from transtats. (User Story 1) The Data will be saved into an existing MySQL database. The backend provides an RESTFul interface to access the saved data.
