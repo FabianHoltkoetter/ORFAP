@@ -1,7 +1,8 @@
 # Technical Documentation
 ## GUI
 
-
+/ ![Apply Settings](images/ApplySetting.png)
+/ ![Start Crawler](images/StartCrawler.png)
 
 ## Backend
 
