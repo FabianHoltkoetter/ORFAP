@@ -1,7 +1,7 @@
 #System specification
 
 ## 1. User Stories
-### Summary
+### 1.1. Summary
 1. As a User I want to see the newest available data from transtats displayed in bar-graph form so that I can analyse the data to determine the best flight routes for the company.
 2. As a User I want to configure the X-Axis of the graph to display one of the qualitative features time (year, month, week, day of week), destination, origin so that I can adapt the graph for my current needs.
 3. As a User I want to configure the Y-Axis of the graph to display one of the quantitative features Flights, Passengers, Delays, DelayDuration, Cancellations so that I can adapt the graph for my current needs.
@@ -9,10 +9,10 @@
 5. As a User I want to save my graph configurations to easily continue working on different analysations.
 6. As a User I want to publicly share configurations with my colleagues to analyse stuff together.
 
-### Done
+### 1.2. Done
 User Story 1-6
 
-### Open
+### 1.3. Open
 None
 
 ## 2. Technical Requirements
