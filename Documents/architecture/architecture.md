@@ -1,4 +1,13 @@
-% Architectural Design
+---
+title:  'Architecture'
+author:
+  - ORFAP
+  - Organisation for all purposes
+lang: de
+geometry: [top=1.25cm, bottom=1.25cm, left=2cm, right=1.25cm]
+toc: true
+documentclass: scrartcl
+---
 
 # Architecture
 
@@ -12,43 +21,20 @@ perfectly meet costumer requirements.
 
 Here are the different services of this architecture:
 
-The **Flight Data Service** provides an API for storing the relevant Flight Data and accessing it. This service ensures integrity and validity of the Data. Additionally it saves the global User Configurations.
-
-**Artifact name** FAPBackend
-
-**Programming language:** Java
-
-**Core technologies:** Spring, MySQL
-
-The **Transtats Crawler Service** provides the functionality to read the current transtats.com Data, transform it as necessary and store it to the Flight Data Service.
-
-**Artifact name** FAPCrawler
-
-**Programming language:** Java
-
-**Core technologies:** Spring
-
-The **Web-GUI** delivers a static (not-templated!) HTML + JS webpage that can be used by the Thin Client as the user frontend. It can make REST requests to the API.
-
-**Artifact name** flight-analyzer
-
-**Programming language:** JavaScript, HTML
-
-**Core technologies:** Polymer
-
-The **API Gateway** unifies the public API and opens it up to the network on port 80. It may also be used to restrict requests for security reasons (e.g. allow only read on flights).
-
-**Artifact name** FAPAPIGateway
-
-**Programming language:** Java
-
-**Core technologies:** Spring, Zuul
+| Service         | Programming Lang. | Core technologies | Description                                                                                                                                                                                                       |
+|------------|------------|------------|-------------------------------------|
+| FAPBackend      | Java              | Spring, MySQL     | The **Flight Data Service** provides an API for storing the relevant Flight Data and accessing it. This service ensures integrity and validity of the Data. Additionally it saves the global User Configurations. |
+| FAPCrawler      | Java              | Spring            | The **Transtats Crawler Service** provides the functionality to read the current transtats.com Data, transform it as necessary and store it to the Flight Data Service.                                           |
+| flight-analyzer | JavaScript, HTML  | Polymer, ChartJS  | The **Web-GUI** delivers a static (not-templated!) HTML + JS webpage that can be used by the Thin Client as the user frontend. It can make REST requests to the API.                                              |
+| FAPAPIGateway   | Java              | Spring, Zuul      | The **API Gateway** unifies the public API and opens it up to the network on port 80. It may also be used to restrict requests for security reasons (e.g. allow only read on flights).                            |
 
 # Data Model
 
 The data model is split into two scopes: Transtats data and Settings.
 
-![](model.png)\
+\ ![](settingsModel.png)
+
+\ ![](transtatsModel.png)
 
 
 ## Transtats data
