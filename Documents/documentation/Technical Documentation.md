@@ -1,11 +1,29 @@
 # Technical Documentation
 ## GUI
+
+
+
 ## Backend
 
-The Backend holds the whole data and offers an API for it. The following section will describe this API. For every Entity on the database the necessary  endpoints
+The Backend holds the whole data and offers an API for it.
+The following section will describe this API.
+For every Entity on the database the necessary endpoints
 (Path) will be shown with the depending HTTP Methods to call.
 
 Base URL: `http://10.28.2.166/api`
+
+### API Overview
+| Entity  | Path                          | HTTP Methods     |
+|---------|-------------------------------|------------------|
+| Airline | /airlines                     | GET, POST        |
+| Airline | /airlines/{id}                | GET, PUT, DELETE |
+| Market  | /markets                      | GET, POST        |
+| Market  | /markets/{id}                 | GET, PUT, DELETE |
+| Route   | /routes                       | GET, POST        |
+| Route   | /routes/{id}                  | GET, PUT, DELETE |
+| Route   | /routes/saveAll               | POST             |
+| Route   | /routes/search/isRouteInMonth | GET              |
+| Route   | /routes/filter                | GET              |
 
 ### Airline
 #### Entity Schema
@@ -425,6 +443,11 @@ Code 204
 **Description:** Apply a given filter setting to the database and
 provide preformatted data.
 
+This action is not a simple database request and
+includes business logic. The following sequence diagram describes this logic:
+
+\ ![Filter Logic](/images/FilterSeqDiagram.png)
+
 **Request Example:**
 Header: Content-Type application/json
 ```
@@ -768,10 +791,6 @@ Code 200
   }
 ]
 ```
-
-
-
-
 
 ## Crawler
 ### Detailed listing of the proceedings of the crawling process
