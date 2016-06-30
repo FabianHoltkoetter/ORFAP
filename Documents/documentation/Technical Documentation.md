@@ -876,11 +876,14 @@ Code,Description
 #### Route table
 * T-100 Domestic Segment (All Carriers)  
 http://transtats.bts.gov/DL_SelectFields.asp?Table_ID=311   
+
 ```
 "YEAR","MONTH","DEPARTURES_SCHEDULED","DEPARTURES_PERFORMED","PASSENGERS","AIRLINE_ID","ORIGIN_CITY_MARKET_ID","DEST_CITY_MARKET_ID",
 
 ```
+
 ##### Example
+
 ```
 form := url.Values{"sqlstr": {"SELECT YEAR,MONTH,DEPARTURES_SCHEDULED,DEPARTURES_PERFORMED,PASSENGERS,AIRLINE_ID,
 									ORIGIN_CITY_MARKET_ID,DEST_CITY_MARKET_ID,MONTH
@@ -890,12 +893,14 @@ form := url.Values{"sqlstr": {"SELECT YEAR,MONTH,DEPARTURES_SCHEDULED,DEPARTURES
 							   AND ORIGIN_CITY_MARKET_ID=31703"}}
 http.PostForm("http://transtats.bts.gov/DownLoad_Table.asp", form)
 ```
+
 ```csv
 "DEPARTURES_SCHEDULED","DEPARTURES_PERFORMED","PASSENGERS","AIRLINE_ID","ORIGIN_CITY_MARKET_ID","DEST_CITY_MARKET_ID","MONTH",
 0.00,1.00,0.00,21107,31703,31703,2,
 0.00,1.00,0.00,21492,31703,31995,2,
 0.00,1.00,0.00,21492,31703,31703,2
 ```
+
 ```json
 {
 	"date": "string[[YEAR]]-[[MONTH]]-01",
@@ -913,11 +918,14 @@ http.PostForm("http://transtats.bts.gov/DownLoad_Table.asp", form)
 #### Flights table
 * On-Time Performance
 http://transtats.bts.gov/DL_SelectFields.asp?Table_ID=236  
+
 ```
 "DAY_OF_WEEK","FL_DATE","AIRLINE_ID","ORIGIN_CITY_MARKET_ID","DEST_CITY_MARKET_ID","ARR_DELAY_NEW","CANCELLED",
 
 ```
+
 ##### Example
+
 ```
 form := url.Values{"sqlstr": {"SELECT DAY_OF_WEEK,FL_DATE,AIRLINE_ID,ORIGIN_CITY_MARKET_ID,DEST_CITY_MARKET_ID,
 									ARR_DELAY_NEW,CANCELLED
@@ -927,6 +935,7 @@ form := url.Values{"sqlstr": {"SELECT DAY_OF_WEEK,FL_DATE,AIRLINE_ID,ORIGIN_CITY
 							   AND ORIGIN_CITY_MARKET_ID=31703"}}
 http.PostForm("http://transtats.bts.gov/DownLoad_Table.asp", form)
 ```
+
 ```csv
 "DAY_OF_WEEK","FL_DATE","AIRLINE_ID","ORIGIN_CITY_MARKET_ID","DEST_CITY_MARKET_ID","ARR_DELAY_NEW","CANCELLED",
 1,2015-02-02,19805,31703,32575,,1.00,
@@ -934,6 +943,7 @@ http.PostForm("http://transtats.bts.gov/DownLoad_Table.asp", form)
 1,2015-02-16,19805,31703,32575,0.00,0.00,
 1,2015-02-23,19805,31703,32575,9.00,0.00
 ```
+
 ```json
 {
 	"date": "string[[FL_DATE]]",
