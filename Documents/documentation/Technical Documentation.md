@@ -847,7 +847,7 @@ An example for a line in the file
 
 
 ### Flowchart for the crawling process
-\ ![FAPCrawler crawling process](Crawler_schematics.png)
+\ ![FAPCrawler crawling process](images/Crawler_schematics.png)
 
 ### Definitions  
 * **Route:**  Information available on a monthly base. They contain the number of passengers going from one market to the other in the given month. The information for number of passengers is always given as a route with the date of the first day of the corresponding month.  
