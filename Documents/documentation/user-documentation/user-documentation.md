@@ -1,15 +1,19 @@
-% User Documentation
-% for Flight Analyzer
-% 15.06.2016
-
-
+---
+title:  'User Guide'
+author:
+  - ORFAP
+  - Organisation for all purposes
+lang: de
+geometry: [top=1.25cm, bottom=1.25cm, left=2cm, right=1.25cm]
+documentclass: scrartcl
+---
 # Getting Started
 
 The **Flight-Analyzer**\textsuperscript{TM} is a normal Web-Application, like `google.com` or `nytimes.com`. So to access it you need any one of these modern Webbrowsers:
 
 
 > Google Chrome
-> : <https://www.google.de/chrome/browser/desktop/> 
+> : <https://www.google.de/chrome/browser/desktop/>
 
 > Firefox
 > : <https://www.mozilla.org/de/firefox/new/>
@@ -29,7 +33,7 @@ Once you have your browser up and running and are connected to the company netwo
 
 # Logging in
 
-![](login.png)\ 
+![](login.png)\
 
 You are now presented with a splash screen. Here you are asked to insert your Username and click **`START`**. The username will be used to recognize you and store your personal settings.
 
@@ -37,15 +41,15 @@ You are now presented with a splash screen. Here you are asked to insert your Us
 
 ## Graph Page
 
-![](graph-page.png)\ 
+![](graph-page.png)\
 
-Upon first login, you will see the **Graph Page**. This is the main page of the application and allows you to configure the settings for the graph and will show it once you click **`APPLY`**. 
+Upon first login, you will see the **Graph Page**. This is the main page of the application and allows you to configure the settings for the graph and will show it once you click **`APPLY`**.
 
 The configuration of the graph will be explained in an additional chapter.
 
 ## Navigation
 
-![](menu.png)\ 
+![](menu.png)\
 
 A click on the top left menu *(hamburger)* button will reveal the menu for changing pages. If you decide to not change the page you can still click on the large grey area and discard this action.
 
@@ -54,7 +58,7 @@ A click on the top left menu *(hamburger)* button will reveal the menu for chang
 By selecting `Load Filter` in the Menu, you will see this page. Here you can load any stored filters/settings by selecting them and confirming
 the action with the button that appears in the bottom right corner.
 
-![](settings-page.png)\ 
+![](settings-page.png)\
 
 
 
@@ -62,7 +66,7 @@ You can also limit the filters by typing into the light grey search field.
 
 ## Crawler Page
 
-![](crawler-page.png)\ 
+![](crawler-page.png)\
 
 Here you can start the Crawler to update the data from the `transtats.com` website. In the input field you have to specify the month to update. To start the crawling process click on **`START CRAWLING`**.
 
@@ -74,7 +78,7 @@ Here you can start the Crawler to update the data from the `transtats.com` websi
 
 In here you can change the most fundamental way how and which data is displayed in the graph.
 
-In the first to fields you select the time range to limit the data. 
+In the first to fields you select the time range to limit the data.
 
 With the `Qualitative Value` you can select how the data is grouped. For example by selecting Destination, for each date (or date range) on the X-Axis multiple Bars (for all the different Destinations) will appear.
 
@@ -84,7 +88,7 @@ The `Time Step` picker sets the length of the period you are interested in. Adju
 
 ## Selectors and Saving a Setting
 
-![](graph-setting2.png)\ 
+![](graph-setting2.png)\
 
 With this Selectors you can additionally limit data by Airline or Destination.
 

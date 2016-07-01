@@ -1,3 +1,12 @@
+---
+title:  'Test Documentation'
+author:
+  - ORFAP
+  - Organisation for all purposes
+lang: de
+geometry: [top=1.25cm, bottom=1.25cm, left=2cm, right=1.25cm]
+documentclass: scrartcl
+---
 # All
 
 * **Code Review** Every change and commitment is reviewed due to our PR-Workflow on github from all team members. Combined with an active linter we made sure that all standards are met.
@@ -9,9 +18,10 @@
 
 # CRAWLER
 
-* **Unit Tests** JUnit tests are implemented which examine if the crawled data (arlines, markets, etc.) are valid. They furthermore assure if the components of the pipes and filter architecture work correctly.
+* **Unit Tests** JUnit tests are implemented which examine if the crawled data (arlines, markets, etc.) are valid. They furthermore assure if the components of the pipes and filter architecture work correctly. The link to to the results is: `https://travis-ci.org/ORFAP/FAPCrawler`
+* **Code Coverage** Every test run on travis includes a code coverage check, which will be passed to `codecov.io`. The link to to the results is: `https://codecov.io/gh/ORFAP/FAPCrawler`
 
 # GUI
 
-* **Unit Tests** were written for multiple javascript methods which control the workflow in the GUI. Only if all tests pass a new release is being deployed.
+* **Unit Tests** were written for multiple javascript methods which control the workflow in the GUI. Only if all tests pass a new release is being deployed. `https://travis-ci.org/ORFAP/flight-analyzer`
 * **Beta Test** The beta tests revealed some minor design flaws that got fixed immediately.

@@ -1,3 +1,13 @@
+---
+title:  'Technical Documentation'
+author:
+  - ORFAP
+  - Organisation for all purposes
+lang: de
+geometry: [top=1.25cm, bottom=1.25cm, left=2cm, right=1.25cm]
+toc: true
+documentclass: scrartcl
+---
 # Technical Documentation
 ## GUI
 
@@ -5,20 +15,20 @@ The GUI offers a visual representation for the backends API which is described f
 
 The application can be in one of four different states during use:
 
-/ ![GUI States](images/GUI_States.png)
+\ ![GUI States](images/GUI_States.png)
 
 The following flowchart displays the requests from the frontend in the different states. A refresh in the browser restarts these requests.
 
-/ ![GUI Backend Request-Flowchart](images/GUI_Backend-Request-Flowchart.png)
+\ ![GUI Backend Request-Flowchart](images/GUI_Backend-Request-Flowchart.png)
 
 The next sequence diagram shows the background workflow of loading and automatically applying a setting.
 
-/ ![Apply Settings](images/ApplySetting.png)
+\ ![Apply Settings](images/ApplySetting.png)
 
 With the GUI the user can start the crawler to fetch the latest
 data from transtats. This is shown in the next sequence diagram.
 
-/ ![Start Crawler](images/StartCrawler.png)
+\ ![Start Crawler](images/StartCrawler.png)
 
 ## Backend
 
@@ -470,7 +480,7 @@ provide preformatted data.
 This action is not a simple database request and
 includes business logic. The following sequence diagram describes this logic:
 
-\ ![Filter Logic](/images/FilterSeqDiagram.png)
+\ ![Filter Logic](images/FilterSeqDiagram.png)
 
 **Request Example:**
 
